@@ -1,13 +1,20 @@
 /*
+-- 01 Typography systems
 -Font sizes(px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 
+
+-Font weights
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
 
 -Line heights
 Default: 1
 Small: 1.05
 Paragraph: 1.6
 
--Colors
+-- 02 Colors
 -Primary: #8CB04E
 -Tints: 
 #e8efdc
@@ -17,6 +24,12 @@ Paragraph: 1.6
 #555
 #333
 
+-- 05 Shadows
+
+-- 06 Border radius
+Default: 9px
+
+-- 07 Whitespace
 -Spacing system(px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
@@ -102,6 +115,43 @@ body {
 
 .logo {
   height: 2.2rem;
+}
+
+/* ===========NAVIGATION SECTION============ */
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: #333;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #8cb04e;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #8cb04e;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #7e9e46;
 }
 
 /* ============HERO SECTION============ */
