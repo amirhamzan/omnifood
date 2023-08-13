@@ -157,6 +157,9 @@
 
 /* ============BELOW 544px (Mobile)============ */
 @media (max-width: 34em) {
+  .header {
+    justify-content: center;
+  }
   .btn-mobile-nav {
     /* display: block; */
   }
