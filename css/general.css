@@ -46,7 +46,9 @@ Default: 9px
 }
 
 html {
-  font-size: 62.5%;
+  /* calculation to change from 16px(default) to 10px */
+  /* 10/16 = 0.625 */
+  font-size: 62.5%; 
   scroll-behavior: smooth;
 }
 
