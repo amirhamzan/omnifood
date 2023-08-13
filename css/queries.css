@@ -34,13 +34,54 @@
   .header {
     padding: 0 3.2rem;
   }
-  
+
   .hero {
     gap: 4.8rem;
   }
 
   .main-nav-list {
     gap: 3.2rem;
+  }
+}
+
+/* ============BELOW 944px (Tablet)============ */
+@media (max-width: 59em) {
+  html {
+    /* calculation to change from 16px(default) to 8px */
+    /* 8/16 = 0.5 */
+    font-size: 50%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
+  }
+
+  .delivered-meals {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
+
+  .hero-img {
+    width: 60%;
+  }
+
+  .logos img {
+    height: 2.4rem;
+  }
+
+  .step-number {
+    font-size: 7.4rem;
+  }
+
+  .meal-content {
+    padding: 2.4rem 3.4rem 3.4rem 3.4rem;
   }
 }
 
